@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <title>BUDGET</title>    
+
+</head>
+<body>
+    
+    
+    <h1> <em>B</em>UDGET <br><span class="coller">Gestion du budget</span></h1>
+    <header>
+        <div class="budget">
+                <div class="box1">Budget</div>
+                <div class="box1">Dépenses</div>
+                <div class="box1">Solde</div>
+                <div class="box2">120.000 CFA</div>
+                <div class="box2">100.000 CFA</div>
+                <div class="box2">20.000 CFA</div>
+        </div>
+    </header>
+  <div class="modal" id="budgetModal">
+        <div class="modal-content">
+            <h1> <em>B</em>UDGET <br><span class="coller">Gestion du budget</span></h1>
+            <P>AOUTER DEPENE</P>
+            <span class="close">X</span>
+            <div class="form">
+            <form method="post">
+                <label for="name">TITRE</label> 
+                <input class="input-cool" type="text" id="name" name="name" placeholder="Eléctricite"/>
+                <br>
+
+                <label for="nombre">MONTANT</label> 
+                <input class="input-cool" type="text" id="nombre" name="nombre" placeholder="100.000F CFA"/> 
+                <br>
+    
+                <button type="submit" class="addDépenseButton">VALIDER</button>
+            </form>
+            </div>
+        </div> 
+    </div>
+
+   
+      <div class="sect">
+           
+            <table class="table">
+                <thead>
+
+                    <tr>
+                        <th>Titre</th>
+                        <th>Montant</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+              <!-- <tbody>
+                    <tr>
+                        <td>Nourriture</td>
+                        <td>40.000F CFA</td>
+                        <td>
+                        <button class="delete-bn" type="button">supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Loyer</td>
+                        <td>30.000F CFA</td>
+                        <td>
+                        <button class="delete-bn" type="button">supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Transport</td>
+                        <td>10.000F CFA</td>
+                        <td>
+                        <button class="delete-bn" type="button">supprimer</button>
+                        </td>
+                    </tr>
+                       </tbody> -->
+                    <tr>
+                        <td style="color: #D1C000;">Ajouter dépense 
+                            <button class="plus" > <i class="fa fa-plus-square"></i></button></td>
+                         <td></td>
+                         <td></td>
+                    </tr>  
+               
+            </table>
+        </div>
+
+
+
+        <div class="method" id="gestionMethod">
+            <h1> <em>B</em>UDGET <br><span class="coller">Gestion du budget</span></h1>
+            <P>AOUTER REVENU</P>
+            <span class="ferme">X</span>
+            <form method="post">
+               TITRE <br><br> <input type="text" id="firstname" firstname="firstname" placeholder="Salaire"><br><br>
+                MONTANT <br><br> <input type="text" id="firstnombre" firstnombre="firstnombre" placeholder="100.000F CFA"><br><br>
+                
+                    <button type="submit" class="addRevenubutton">VALIDER</button>
+        
+               </form>
+            </div>
+
+        <div class="sect">
+            
+             <table class="Table">
+                 <thead>
+                     <tr>
+                         <th>Titre</th>
+                         <th>Montant</th>
+                         <th>Action</th>
+                     </tr>
+                 </thead>
+                   <!-- <tbody>
+            <tr>
+                <td>Nourriture</td>
+                <td>40.000F CFA</td>
+                <td>
+                <button class="delete-btn" type="button">supprimer</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Loyer</td>
+                <td>30.000F CFA</td>
+                <td>
+                <button class="delete-btn" type="button">supprimer</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Transport</td>
+                <td>10.000F CFA</td>
+                <td>
+                <button class="delete-btn" type="button">supprimer</button>
+                </td>
+            </tr>
+               </tbody> -->
+               <tr>
+                <td style="color: #D1C000;">Ajouter revenu
+                    
+                    <button class="moins"> <i class="fa fa-plus-square"></i></button> 
+                   </td>
+                 <td></td>
+                 <td></td>
+            </tr>
+                
+             </table>
+         </div> 
+
+ 
+        <script src="/javascript.js"></script>
+</body>
+</html>
