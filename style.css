@@ -1,0 +1,209 @@
+@media only screen and (max-width:992px) {
+    
+    
+}
+body{
+    margin: auto;
+    
+}
+h1{
+    text-align: center;
+    padding: 3px;
+    color: #D1C000;
+    font-weight: bolder;
+    
+}
+em{
+    font-size: larger;
+    font-weight: 900;
+    color: blue;
+}
+.coller{
+    font-size: small;
+    color: blue;
+}
+header{
+    margin: auto;
+    width: 980px;
+    padding: 4px;
+}
+.budget{
+    display: grid;
+    grid-template-columns: 25ch 25ch 25ch;
+    padding: 70px;
+    height: 90px;
+   justify-content: space-between;
+}
+
+.box1{
+    text-align: center;
+    padding: 8px;
+    background-color: #0C5E69;
+    color: white;
+   box-shadow: 2px 2px 2px 2px #0C5E69;
+
+   
+}
+.box2{
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+   box-shadow: 5px 5px 5px 5px whitesmoke;
+}
+.sect{
+
+    text-align: end;
+}
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+.table th, .table td{
+    border: 1px solid grey;
+    text-align: left;
+    padding: 10px;
+}
+.table th{
+    background-color: #0C5E69;
+    color: white;
+}
+.delete-bn{
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    padding: 10px 20px;
+}
+.modal{
+   display: none;
+    
+     
+}
+.modal-content{
+    margin: auto;
+   padding: 8px;
+    width: 90%;
+    border: 1px solid blue;
+}
+h1{
+    text-align: center;
+    padding: 3px;
+    color: #D1C000;
+    font-weight: bolder;
+
+    }
+ em{
+    font-size: larger;
+    font-weight: 900;
+   color: blue;
+   }
+.coller{
+   font-size: small;
+  color: blue;
+    }
+p{
+    padding: 10px;
+    text-align: center;
+    color: #0C5E69;
+}
+.close{
+    align-items: normal;
+    font-size: medium;
+
+
+}
+form{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+      
+}
+.input-cool{
+    padding: 6px;
+    width: 30%;
+    margin: 9px 0;
+   /* text-align: center;
+    margin: 6px 0;
+    width: 30%;
+    justify-content: space-around;
+    box-sizing: border-box;*/
+}
+.addDépenseButton{
+    background-color: #0C5E69;
+    text-align: center;
+    color: white;
+    width: 350px;
+    height: 40px;
+    border-radius: 1rem;
+    padding: 2px;
+}
+
+/*revenu*/
+
+
+    .Table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .Table th, .Table td{
+        border: 1px solid grey;
+        text-align: left;
+        padding: 10px;
+    }
+    .Table th{
+        background-color: #0C5E69;
+        color: white;
+    }
+    .delete-btn{
+        background-color: red;
+        border: 1px solid red;
+        color: white;
+        padding: 10px 20px;
+    }
+    .method{
+        display: none;
+
+    }
+    
+h1{
+    text-align: center;
+    padding: 3px;
+    color: #D1C000;
+    font-weight: bolder;
+
+    }
+ em{
+    font-size: larger;
+    font-weight: 900;
+   color: blue;
+   }
+.coller{
+   font-size: small;
+  color: blue;
+    }
+    
+    p{
+        padding: 30px;
+        text-align: left;
+        color: #0C5E69;
+    }
+    form{
+        margin: auto;
+        padding-bottom: 20%;
+        text-align: center;
+          
+    }
+    input{
+        padding: 5px;
+        width: 30%;
+    }
+
+    .addRevenubutton{
+        background-color: #0C5E69;
+        text-align: center;
+        color: white;
+        width: 350px;
+        height: 40px;
+        border-radius: 1rem;
+        padding: 2px;
+    }
