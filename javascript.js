@@ -123,12 +123,11 @@ addDépenseButton.onclick = function(event){
 }
 
 
- let initialRevenus = getRevenus() || [
-    /*{"Titre": "Salaire", "Montant": "300.000F CFA"},
+ let initialRevenus =  [
+   /* {"Titre": "Salaire", "Montant": "300.000F CFA"},
     {"Titre": "Business",      "Montant": "100.000F CFA"},
-    {"Titre": "Bonus",  "Montant": "30.000F CFA"},*/
-
-
+    {"Titre": "Bonus",  "Montant": "30.000F CFA"},
+*/
 ]
 
 const Table = document.querySelector(".Table")
@@ -143,7 +142,7 @@ function setRevenus(revenus){
 
 
 setRevenus(initialRevenus)
-let revenus = getRevenus()
+let revenus = initialRevenus;
 
 function createtable(){
     for (let index = 0; index < 3; index++) {
@@ -177,7 +176,6 @@ function createtable(){
     document.body.appendChild(Table)
    }
    
-   createtable()
 
    let deletebutton = document.querySelectorAll(".delete-btn")
  deletebutton.forEach(function (button) {
@@ -259,3 +257,4 @@ addRevenubutton.onclick = function (event) {
    document.getElementById("firstnombre").value =''
 
 }
+createtable()
