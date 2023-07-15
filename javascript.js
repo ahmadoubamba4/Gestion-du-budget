@@ -205,7 +205,6 @@ addRevenubutton.onclick = function (event) {
    }*/
    const newRevenu = { firstname, firstnombre }
     revenus.push(newRevenu)
-    setRevenus(revenus)
 
     let row = document.createElement("tr")
 
