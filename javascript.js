@@ -118,31 +118,18 @@ addDépenseButton.onclick = function(event){
 
 
  /*revenu*/
- function getRevenus(){
-    return JSON.parse(localStorage.getItem('revenus'))
-}
 
-
- let initialRevenus =  [
-   /* {"Titre": "Salaire", "Montant": "300.000F CFA"},
+ let revenus =  [
+   /*{"Titre": "Salaire", "Montant": "300.000F CFA"},
     {"Titre": "Business",      "Montant": "100.000F CFA"},
-    {"Titre": "Bonus",  "Montant": "30.000F CFA"},
-*/
+    {"Titre": "Bonus",  "Montant": "30.000F CFA"},*/
+
 ]
 
 const Table = document.querySelector(".Table")
 const tblbody = document.createElement("tbody")
 
-/*localStorage.setItem('cle3', 'valeur 3')
-console.log(localStorage.getItem('cle3')) */
 
-function setRevenus(revenus){
-    localStorage.setItem("revenus", JSON.stringify(revenus))
-}
-
-
-setRevenus(initialRevenus)
-let revenus = initialRevenus;
 
 function createtable(){
     for (let index = 0; index < 3; index++) {
