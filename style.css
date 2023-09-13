@@ -76,6 +76,7 @@ header{
 }
 .modal{
    display: none;
+   padding: 30px;
     
      
 }
@@ -160,8 +161,10 @@ form{
         color: white;
         padding: 10px 20px;
     }
+    
     .method{
         display: none;
+        padding: 2px;
 
     }
     

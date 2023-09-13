@@ -1,7 +1,5 @@
 let depenses = [
-    {"Titre": "Nourriture", "Montant": "40.000F CFA"},
-    {"Titre": "Loyer",      "Montant": "30.000F CFA"},
-    {"Titre": "Transport",  "Montant": "10.000F CFA"},
+    
 ]
 
 
@@ -40,7 +38,7 @@ function createTable(){
  document.body.appendChild(table)
 }
 
-createTable()
+
 let deleteButton = document.querySelectorAll(".delete-bn")
  deleteButton.forEach(function(button){
 
@@ -59,7 +57,7 @@ let close = document.querySelector(".close")
 
 plus.onclick = function() {
     modal.style.display = 'block'
-}
+}                                                                             
 
 close.onclick = function() {
     modal.style.display = 'none'
@@ -120,7 +118,7 @@ addDépenseButton.onclick = function(event){
  /*revenu*/
 
  let revenus =  [
-   /*{"Titre": "Salaire", "Montant": "300.000F CFA"},
+    /*{"Titre": "Salaire", "Montant": "300.000F CFA"},
     {"Titre": "Business",      "Montant": "100.000F CFA"},
     {"Titre": "Bonus",  "Montant": "30.000F CFA"},*/
 
@@ -129,39 +127,36 @@ addDépenseButton.onclick = function(event){
 const Table = document.querySelector(".Table")
 const tblbody = document.createElement("tbody")
 
+const createtable = function () {
+  for (let index = 0; index < 3; index++) {
+    let row = document.createElement("tr");
 
+    let buttonCell = document.createElement("td");
+    let deleteButton = document.createElement("button");
+    let buttonText = document.createTextNode("Supprimer");
+    deleteButton.setAttribute("class", "delete-btn");
+    deleteButton.appendChild(buttonText);
 
-function createtable(){
-    for (let index = 0; index < 3; index++) {
-       let row = document.createElement("tr");
-
-       let buttonCell = document.createElement("td")
-       let deletebutton = document.createElement("button")
-       let buttonText = document.createTextNode("Supprimer")
-       deletebutton.setAttribute("class", "delete-btn")
-       deletebutton.appendChild(buttonText)
-   
-   
     for (let element = 0; element < 2; element++) {
-       const cell = document.createElement("td");
-   
-       const cellText = document.createTextNode(Object.values(revenus[index])[element])
-       deletebutton.setAttribute('firstname', revenus[index].firstname)
-      buttonCell.appendChild(deletebutton)
-      cell.appendChild(cellText)
-       row.appendChild(cell)
-      row.appendChild(buttonCell)
-      row.setAttribute('id', revenus[index].firstname)
-   
-       
-    }   
-   
-       tblbody.appendChild(row)
-        
-   }
-    Table.appendChild(tblbody)
-    document.body.appendChild(Table)
-   }
+      const cell = document.createElement("td");
+
+      const cellText = document.createTextNode(Object.Values(revenus[index])[element]);
+      deleteButton.setAttribute('firstname', revenus[index].firstname);
+      buttonCell.appendChild(deleteButton);
+      cell.appendChild(cellText);
+      row.appendChild(cell);
+      row.appendChild(buttonCell);
+      row.setAttribute('id', revenus[index].firstname);
+    }
+
+    tblBody.appendChild(row);
+  }
+
+  table.appendChild(tblBody);
+  document.body.appendChild(table);
+}
+
+
    
 
    let deletebutton = document.querySelectorAll(".delete-btn")
@@ -176,10 +171,7 @@ function createtable(){
 
     })
  })
-
-
-
-
+ 
 let method = document.getElementById("gestionMethod")
 let moins = document.querySelector(".moins")
 let ferme = document.querySelector(".ferme")
@@ -199,10 +191,10 @@ addRevenubutton.onclick = function (event) {
     const firstname = document.getElementById("firstname").value
     const firstnombre = document.getElementById("firstnombre").value
     
-  /* if (! firstname || ! nombre) {
+   if (! firstname || ! nombre) {
         alert("merci de tout remplir")
         return
-   }*/
+   }
    const newRevenu = { firstname, firstnombre }
     revenus.push(newRevenu)
 
@@ -243,4 +235,5 @@ addRevenubutton.onclick = function (event) {
    document.getElementById("firstnombre").value =''
 
 }
+
 createtable()
